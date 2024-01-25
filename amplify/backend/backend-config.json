@@ -1,1 +1,64 @@
-{}
+{
+  "api": {
+    "mytestapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    },
+    "user": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "user": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_user_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "user"
+        }
+      ]
+    },
+    "AMPLIFY_function_user_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "user"
+        }
+      ]
+    }
+  }
+}
