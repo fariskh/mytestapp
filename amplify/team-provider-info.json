@@ -15,12 +15,15 @@
       "function": {
         "user": {
           "deploymentBucketName": "amplify-mytestapp-dev-115343-deployment",
-          "s3Key": "amplify-builds/user-6c554c5a535453713351-build.zip"
+          "s3Key": "amplify-builds/user-6559416f6a35576a446a-build.zip"
         }
       },
       "api": {
         "mytestapp": {},
         "user": {}
+      },
+      "auth": {
+        "mytestappe01e2877": {}
       }
     }
   }

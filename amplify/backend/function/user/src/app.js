@@ -16,6 +16,14 @@ app.get('/user', function(req, res) {
   res.json({success: 'My new changes here!', url: req.url});
 });
 
+app.get('/user/home', function(req, res) {
+  res.json({success: 'Home!', url: req.url});
+});
+
+app.get('/user/logout', function(req, res) {
+  res.json({success: 'Main', url: req.url});
+});
+
 app.listen(3000, function() {
     console.log("App started")
 });
