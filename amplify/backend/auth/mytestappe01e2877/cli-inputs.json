@@ -62,7 +62,7 @@
     "hostedUIDomainName": "mytestapp8de0b2f7-8de0b2f7",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/user/home/\"],\"LogoutURLs\":[\"http://localhost:3000/user/logout/\"]}",
-    "authProviders": []
+    "authProviders": [],
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/user/home/\",\"https://7ag4za0axh.execute-api.us-east-1.amazonaws.com/main/user/home/\"],\"LogoutURLs\":[\"http://localhost:3000/user/logout/\",\"https://7ag4za0axh.execute-api.us-east-1.amazonaws.com/main/user/logout/\"]}"
   }
 }
