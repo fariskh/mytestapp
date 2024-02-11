@@ -2,7 +2,7 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "mytestappe01e2877_identitypool_e01e2877",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "myteste01e2877",
     "userPoolName": "mytestappe01e2877_userpool_e01e2877",
     "autoVerifiedAttributes": [
@@ -59,10 +59,10 @@
     "breakCircularDependency": true,
     "dependsOn": [],
     "hostedUI": true,
-    "hostedUIDomainName": "mytestapp8de0b2f7-8de0b2f7",
+    "hostedUIDomainName": "mytestapp",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
     "authProviders": [],
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/user/home/\",\"https://7ag4za0axh.execute-api.us-east-1.amazonaws.com/main/user/home/\"],\"LogoutURLs\":[\"http://localhost:3000/user/logout/\",\"https://7ag4za0axh.execute-api.us-east-1.amazonaws.com/main/user/logout/\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}"
   }
 }

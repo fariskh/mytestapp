@@ -71,22 +71,11 @@
       "service": "Lambda"
     }
   },
-  "parameters": {
-    "AMPLIFY_function_user_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "user"
-        }
-      ]
-    },
-    "AMPLIFY_function_user_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "user"
-        }
-      ]
+  "storage": {
+    "mytestappS3Storage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }

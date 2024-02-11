@@ -6,11 +6,18 @@
   "license": "Apache-2.0",
   "dependencies": {
     "aws-amplify": "^6.0.13",
+    "aws-sdk": "^2.1547.0",
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.17.1",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mysql": "^2.18.1",
+    "node-salesforce": "^0.8.0",
+    "serverless-http": "^3.2.0",
+    "stripe": "^14.14.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.92"
+    "@types/aws-lambda": "^8.10.92",
+    "serverless-offline": "^13.3.3"
   }
 }
